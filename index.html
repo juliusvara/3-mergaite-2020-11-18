@@ -4,29 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mergaite</title>
+    <!-- TODO example-->
     <style>
-        main {
+        /* BUG stiliaus suvienodinimas visiems (reset) pradzia */
+        body,
+        body * {
+            margin: 0;
+            padding: 0;
+            vertical-align: top;
+            box-sizing: border-box; 
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+         /* BUG stiliaus suvienodinimas visiems (reset) pabaiga */
+        body {
+            background-color: #F8F8F8 ;
+            
+        }
+        body>main {
             display: inline-block; 
             width: 800px; 
-            margin-top: 40px;
-            background-color: rgb(0, 153, 255);
+            margin-top: 20px;
             margin-left: calc(50% - 400px);
+            color: #9F9F9F;
         }
             header{
                 display: inline-block;
                 width: 100%; 
-            }
-                img {
+                 }
+                header > img {
                     display: inline-block;
-                    float: left ;
+                    float: left;
+                    width: 50px;
                 }
                 nav {
                     display: inline-block;
                     float: right ;
+                    margin-top: 7px;
                 }
+                a {
+                    display: inline-block;
+                    padding: 2px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    margin-left: 10px;
+                    text-decoration: none;
+                    font-size: 18px;
+                    color: #9F9F9F;
+                    border: 2px solid transparent;
+                }
+
+                a:last-of-type {
+                    border-color: #9F9F9F;
+                    text-transform: uppercase;
+                    border-radius: 22px;
+                }
+
             section{
                 display: inline-block;
                 width: 100%;
+                padding: 20px;
+                margin-top: 60px;
+            }
+            div {
+                display: inline-block;
+                width: 360px;
+                float: left;
+                margin-top: 40px;
+                
+            }
+            h1 {
+                display: inline-block;
+                width: 100%;
+                font-size: 60px;
+            }
+            p {
+                display: inline-block;
+                font-size: 25px;   
+
+            }
+            section > img {
+                display: inline-block;
+                width: 45%;
+                float: right ;  
             }
     </style>
 </head>
@@ -39,14 +98,14 @@
                <a href="#">Track</a>
                <a href="#">Library</a>
                <a href="#">Community</a>
-               <a href="# in">Sign in</a>
+               <a href="#">Sign in</a>
 
            </nav> 
         </header>
         <section>
             <div>
                 <h1>404</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nam nemo fugit nesciunt obcaecati quaerat harum, dolor saepe excepturi totam accusamus tempora impedit asperiores exercitationem sequi dolorem, distinctio aliquam autem!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <img src="mergaite.png" alt="Mergaite">
         </section>
